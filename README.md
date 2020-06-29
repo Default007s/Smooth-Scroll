@@ -1,2 +1,2 @@
 # Smooth-Scroll
-Just a kind of landing page with dummy text but really smooth scroll and navigation on the same page
+Just a kind of landing page with dummy text but really smooth scroll and navigation on the same page. It is responsive also
