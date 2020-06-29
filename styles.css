@@ -1,0 +1,153 @@
+@import url('https://fots.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+html
+{
+  scroll-behavior:smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-decoration: none;
+
+    overflow: hidden;
+    list-style-type: none;
+    list-style: none;
+    background-image: linear-gradient(95deg, #391763, #7D4FA1);
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+}
+
+header{
+    background-image: linear-gradient(90deg, #391763, #7D4FA1);
+    color: white;
+    height: 80px;
+    font-size: 1.3rem;
+    box-shadow: 5px 4px 20px 10px black;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav{
+    padding: 40px 50px;
+}
+
+ul{
+    text-transform: uppercase;
+    margin-right: 50px;
+    text-align: center;
+}
+
+li{
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.line-transition::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3.5px;
+    background: white;
+    transition: width .2s;
+    margin-top: 11.3px;
+}
+
+.line-transition:hover::after{
+    width: 100%;
+    transition: width .2s;
+}
+
+@media(max-width: 900px){
+    #logo{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #logo{
+        font-size: 1.5rem;
+        padding: 0;
+        transition: font-size 1s;
+    }
+    nav ul li{
+        font-size: 1rem;
+        padding-left: 30px;
+        transition:font-size 1s;
+    }
+
+    nav{
+        padding: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    ul{
+        margin: 0;
+        margin-top: -21px;
+    }
+
+    .line-transition::after{
+        margin-top: 23.5px;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.div-mid{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.h1-mid{
+    padding-top: 320px;
+    font-size: 4rem;
+    margin-bottom: 50px;
+
+}
+
+.p-mid{
+    font-size: 1.5rem;
+    padding: 0 400px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 1000px){
+    .p-mid{
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+
+
+
+
+
+
